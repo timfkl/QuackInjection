@@ -1,4 +1,35 @@
-<!DOCTYPE html>
-  <body>
-    <p>This is a paragraph.</p>
-  </body>
+<!doctype html>
+<html>
+    <head>
+        <title>Vidnami</title>
+        <!--Required-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <!--Code goes here-->
+            <form>
+              <label for="inputVid">Select a video:</label>
+              <input type="file" id="inputVid" name="inputVid" accept="video/*">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" id="videoPreview" controls="true" width="580" height="370" crossorigin="anonymous">
+                <source src="http://jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm" type="video/webm">
+                <source src="http://jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v" type="video/mp4">
+              </video>
+              
+              <canvas id="my-canvas" width="480" height="270"></canvas>
+            </div>
+            
+        </div>
+
+
+        <!--Leave this at the end. It imports js scripts for bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
