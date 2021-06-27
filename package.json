@@ -3,8 +3,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=https://notzoom.herokuapp.com",
-    "serve": "vite preview --host https://notzoom.herokuapp.com",
-    "start": "vite preview --host https://notzoom.herokuapp.com"
+    "serve": "vite preview --host",
+    "start": "vite preview --host"
   },
   "devDependencies": {
     
