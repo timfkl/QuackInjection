@@ -6,3 +6,13 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.footer{
+  color: white;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333333;
+  text-align: center;
+}
