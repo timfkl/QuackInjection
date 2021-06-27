@@ -1,14 +1,12 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=https://notzoom.herokuapp.com",
+    "dev": "vite --host",
+    "build": "vite build",
     "serve": "vite preview --host",
     "start": "vite preview --host"
   },
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "dependencies": {
     "firebase": "^8.6.8",
     "vite": "^2.3.8"
