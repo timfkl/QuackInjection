@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definitly Not Zoom At All</title>
+  </head>
+  <body>
+    <div id="app">
+      <video id="userVid" autoplay playsinline></video>
+      <video id="AudienceVid" autoplay playsinline></video>
+    
+
+      <button id="activateWebcam">Start webcam</button>
+      <button id="call" disabled>Create Call (offer)</button>
+
+      <input id="callID" />
+      <button id="answerCall" disabled>Answer</button>
+
+      <button id="hangupCall" disabled>Hangup</button>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
