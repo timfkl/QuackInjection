@@ -11,8 +11,22 @@
     <body>
         <div class="container">
             <!--Code goes here-->
+            <form>
+              <label for="inputVid">Select a video:</label>
+              <input type="file" id="inputVid" name="inputVid" accept="video/*">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" id="videoPreview" controls="true" width="580" height="370" crossorigin="anonymous">
+                <source src="http://jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm" type="video/webm">
+                <source src="http://jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v" type="video/mp4">
+              </video>
+              
+              <canvas id="my-canvas" width="480" height="270"></canvas>
+            </div>
             
-        </div>>
+        </div>
 
 
         <!--Leave this at the end. It imports js scripts for bootstrap-->
